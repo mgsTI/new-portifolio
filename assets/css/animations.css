@@ -1,0 +1,75 @@
+/* typing animate */
+
+@keyframes typing-animate{
+    0%{
+        width: 0;
+    }
+
+    100%{
+        width: 10.5em;
+    }
+}
+
+/* glow secundary text */
+
+@keyframes glow{
+    0%{
+        text-shadow: 0 0 5px var(--green);
+    }
+    10%{
+        text-shadow: 0 0 8px var(--green);
+    }
+    25%{
+        text-shadow: 0 0 7px var(--green);
+    }
+    50%{
+        text-shadow: 0 0 2px var(--green);
+    }
+    75%{
+        text-shadow: 0 0 5px var(--green);
+    }
+    90%{
+        text-shadow: 0 0 9px var(--green);
+    }
+    100%{
+        text-shadow: 0 0 3px var(--green);
+    }
+
+}
+
+/* border right animate */
+
+@keyframes twinkle-cursor{
+    0%, 100%{
+        border-right-color: var(--white);
+    }
+
+    50%{
+        border-right-color: transparent;
+    }
+}
+
+/* blink arrow down */
+
+@keyframes blink-arrow{
+    0%{
+        color: var(--primary);
+    }
+
+    25%{
+        color: var(--secundary);
+    }
+
+    50%{
+        color: var(--primary);
+    }
+
+    75%{
+        color: var(--secundary);
+    }
+
+    100%{
+        color: var(--primary);
+    }
+
+}

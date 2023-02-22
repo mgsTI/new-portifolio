@@ -1,0 +1,106 @@
+/*global settings*/
+:root{
+
+    /*var colors*/
+
+    --primary: #8A3FFC;
+    --secundary: rgb(113, 65, 168);
+    --tertiary : rgb(48, 39, 114);
+    --dark-gray: rgb(13, 13, 13);
+    --dark-gray--translucity: rgba(13, 13, 13, 0.970);
+    --medium-gray: rgb(16, 16, 16);
+    --light-gray: #222;
+    --green: #0BC191;
+    --white: #fff;
+    --black: black;
+
+    /*var colors*/
+
+    /*var fonts*/
+
+    --poppins: "poppins";
+    --bely: "bely";
+
+    /*var fonts*/
+
+    /*var clip path*/
+
+    --clip-button: polygon(5% 0, 100% 0, 100% 0, 100% 80%, 95% 100%, 0 100%, 0 100%, 0 30%);
+
+    /*var clip path*/
+
+    /*other configs*/
+
+    --trans: .4s;
+    --trans-slow: .7s;
+}
+
+html{
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 7px;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: var(--light-gray);
+    border-radius: 10px;
+}
+
+/*global settings*/
+
+/*fonts declarations*/
+
+@font-face {
+    font-family: "poppins";
+    src: url(../fonts/Poppins.otf);
+}
+
+@font-face {
+    font-family: "bely";
+    src: url(../fonts/Bely.otf);
+}
+
+/*fonts declarations*/
+
+/*body settings*/
+
+body{
+    min-height: 100vh;
+    max-width: 100vw;
+    background: var(--medium-gray);
+    overflow-x: hidden;
+    transition: .5s;
+}
+
+/* scroll reveal settings */
+
+/* home */
+#home .containerProfile,
+#home .containerTyping,
+#home .containerArrowDown,
+#about .content-about--title,
+#about .box-container--description,
+/* skills and projects*/
+#skills .content-skills-title,
+#skills .card-01,
+#skills .card-02,
+#skills .projects-title,
+#skills .card-project--01,
+#skills .card-project--02,
+#skills .card-project--03,
+#skills .container-github,
+/* contact */
+#contact .container-title--contact,
+#contact .form-contact .inp-name,
+#contact .form-contact .inp-email,
+#contact .form-contact .label-form,
+#contact .form-contact .text-area,
+#contact .form-contact .enter
+{
+    visibility: hidden;
+}
+
+/* scroll reveal settings */
+/*body settings*/
+

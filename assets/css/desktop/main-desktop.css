@@ -1,0 +1,317 @@
+/*===========*/
+/* tablets and laptops */
+@media screen and (min-width: 768px) {
+    #nav-mobile{
+        display: none;
+    }
+
+    /* header desktop */
+
+    #nav-desktop{
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100vw;
+        height: 90px;
+
+        background: var(--dark-gray);
+        z-index: 1000;
+    }
+
+    .box-mobile--logo{
+        margin-left: 7%;
+    }
+
+    #nav-desktop #menu-desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+
+        margin-right: 7%;
+    }
+    
+    #nav-desktop #menu-desktop li{
+        margin: 0.5rem;
+    }
+
+    #nav-desktop #menu-desktop li a{
+        position: relative;
+
+        color: white;
+        font-family: "poppins";
+        font-size: 1em;
+
+        text-decoration: none;
+        text-shadow: none;
+    }
+
+    #nav-desktop #menu-desktop li a span{
+        color: var(--primary);
+    }
+
+    #nav-desktop #menu-desktop li a::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: 0;
+
+        width: 0;
+        height: 3px;
+
+        filter: drop-shadow(0 0 5px var(--primary));
+        border-radius: 10px;
+        background: var(--primary);
+        transition: var(--trans);
+    }
+
+    #nav-desktop #menu-desktop li a::after{
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        width: 0;
+        height: 3px;
+
+        filter: drop-shadow(0 0 5px var(--green));
+        border-radius: 10px;
+        background: var(--green);
+        transition: var(--trans);
+    }
+
+    #nav-desktop #menu-desktop li a:hover::before{
+        width: 100%;
+    }
+    #nav-desktop #menu-desktop li a:hover::after{
+        width: 100%;
+    }
+
+    /* home style */
+    
+    #home .containerProfile{
+        margin-top: 50px;
+        width: 350px;
+        height: 350px;
+    }
+    
+    #home .containerProfile img{
+        position: absolute;
+        width: 350px;
+        height: 350px;
+    
+        border-radius: 200px;
+    }
+    
+    #home .containerProfile .layer-span{
+        position: absolute;
+        width: 350px;
+        height: 350px;
+    
+        border-radius: 200px; 
+
+    }
+
+    #home .containerTyping{
+        margin-right: 20px;
+    }
+
+    #home .containerTyping p{
+        font-family: "poppins";
+        font-size: 1.3em;
+    }
+    
+    #home .containerTyping p:nth-child(2){
+        color: var(--white);
+        font-size: 1.7em;
+        border-right: 4px solid var(--white);
+    
+        white-space: nowrap;
+        overflow: hidden;
+    
+        animation: twinkle-cursor 450ms infinite, typing-animate 4s steps(40) normal both;
+    }
+
+    /* arrow down */
+
+    #home .containerArrowDown{
+        bottom: 0;
+    }
+
+    /* home style */
+
+    /* about style */
+
+    #about{
+        height: 50vh;
+    }
+
+    #about .containerDescription{
+        margin: 40px 30px 0 30px;
+    }
+
+    /* about style */
+
+    /* skills and projects style */
+
+    #skills .box-projects{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #skills .box-projects .container-projects{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    
+        margin: 20px;
+    }
+
+    /* skills and projects style */
+
+    /* contact style */
+
+    #contact .container-formulário .form-contact{
+        width: 60%;
+    }
+
+    /* contact style */
+    
+}
+
+/*===========*/
+/* desktop */
+@media screen and (min-width: 992px) {
+    
+    /* home style */
+
+    #home{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    #home .containerTyping{
+        margin-right: -5px;
+        margin: -50px 0;
+    }
+
+    #home .containerProfile{
+        margin-top: -10px;
+        width: 350px;
+        height: 350px;
+    }
+
+    /* home style */
+
+    /* about style*/
+
+    #about .containerDescription{
+        width: 70%;
+    }
+
+    /* about style*/
+
+    /* contact style */
+
+    #contact .container-formulário .form-contact{
+        width: 45%;
+    }
+
+}
+
+/*===========*/
+/* larger screens (tv and others) */
+@media screen and (min-width: 1200px){
+    /* home style */
+
+    #home .containerProfile{
+        margin-top: -10px;
+        margin-right: -20px;
+        width: 350px;
+        height: 350px;
+        margin-left: -200px;
+    }
+    
+    #home .containerProfile img{
+        position: absolute;
+        width: 350px;
+        height: 350px;
+    
+        border-radius: 200px;
+    }
+    
+    #home .containerProfile .layer-span{
+        position: absolute;
+        width: 350px;
+        height: 350px;
+    
+        border-radius: 200px; 
+
+    }
+
+    #home .containerTyping{
+        margin: -50px ;
+    }
+
+    #home .containerTyping p{
+        font-size: 1.5em;
+    }
+    
+    #home .containerTyping p:nth-child(2){
+        font-size: 1.9em;
+    }
+
+    #home .containerArrowDown{
+        margin: 80px;
+    }
+
+    /* home style */
+
+   /* about style */ 
+
+   #about{
+    height: 60vh;
+   }
+
+   #about .containerDescription{
+    margin-top: 7%;
+    width: 60%;
+   }
+
+   /* about style */ 
+
+   /* skills and projects style */
+
+   #skills .box-projects{
+    margin: 100px;
+   }
+
+   #skills .box-projects .container-github{
+    margin: 80px 0 10px 0;
+   }
+
+
+
+   /* skills and projects style */
+
+   /* contact style */
+
+   #contact .container-formulário .form-contact{
+    width: 30%;
+   }
+
+
+    /* contact style */
+}
